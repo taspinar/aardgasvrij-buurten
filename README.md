@@ -15,6 +15,7 @@ De site draait op GitHub Pages en bestaat uit gewone HTML-bestanden, zonder bouw
 ```
 index.html                               startpagina met alle buurten
 assets/style.css                         gedeelde opmaak
+assets/rekenhulp.js                      rekenhulp in het rapport, zelfde model als scripts/model.py
 <gemeente>/<buurt>/index.html            het rapport
 <gemeente>/<buurt>/flyers.html           flyers per woningtype, printbaar als A4
 <gemeente>/<buurt>/data/samenvatting.json  getotaliseerde cijfers van de buurt

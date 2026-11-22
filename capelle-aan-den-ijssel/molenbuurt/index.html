@@ -7,7 +7,7 @@
 <meta name="description" content="Buurtanalyse van de Molenbuurt in Capelle aan den IJssel met advies per woningtype om van het aardgas af te gaan: kosten, subsidie en terugverdientijd.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@600;700&display=swap">
-<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/style.css?v=2">
 </head>
 <body>
 <header class="site-header">
@@ -52,7 +52,7 @@
 <ul>
 <li><strong>Doe deze winter de 50-gradentest.</strong> Blijft je huis warm met cv-water van 50 graden, dan kan een warmtepomp het werk doen.</li>
 <li><strong>Vervang een kapotte ketel niet meer door alleen een nieuwe ketel.</strong> Dat is het goedkoopste moment om over te stappen.</li>
-<li><strong>Reken met je eigen gasverbruik.</strong> Onder de 800 m³ per jaar loont een hybride warmtepomp financieel nauwelijks. Volledig elektrisch verdient zich bij ketelvervanging in ongeveer 7 tot 12 jaar terug.</li>
+<li><strong>Reken met je eigen gasverbruik</strong> in de <a href="#rekenhulp-kop">rekenhulp</a>. Onder de 800 m³ per jaar loont een hybride warmtepomp financieel nauwelijks. Volledig elektrisch verdient zich bij ketelvervanging in ongeveer 7 tot 12 jaar terug.</li>
 <li><strong>Kook elektrisch bij een nieuwe keuken</strong> en laat de gasaansluiting weghalen zodra het kan. Dat scheelt ongeveer € 360 per jaar.</li>
 <li><strong>Woon je in een appartement, begin dan bij de VvE.</strong></li>
 </ul>
@@ -197,6 +197,100 @@
 <tr><td>1.000 m³</td><td class="num">€ 410</td><td class="num">10 jaar</td><td class="num">€ 975</td><td class="num">9 jaar</td></tr>
 <tr><td>1.300 m³</td><td class="num">€ 580</td><td class="num">7 jaar</td><td class="num">€ 1.160</td><td class="num">7 jaar</td></tr>
 </tbody></table></div>
+<h3 id="rekenhulp-kop">Rekenhulp: vul je eigen verbruik in</h3>
+<p>Kies je woning of schuif naar je eigen verbruik. Je ziet meteen wat een warmtepomp oplevert en wanneer je hem hebt terugverdiend.</p>
+<form id="rekenhulp" class="rh" aria-labelledby="rekenhulp-kop" novalidate>
+<div class="rh-invoer">
+<div class="rh-blok">
+<div class="rh-stap" id="rh-l1">1. Kies je woning</div>
+<div class="rh-chips" role="group" aria-labelledby="rh-l1">
+<button type="button" class="rh-chip" data-gas="700" data-actief="0" aria-pressed="false">Tussenwoning tot 130 m²</button>
+<button type="button" class="rh-chip" data-gas="800" data-actief="1" aria-pressed="true">Tussenwoning 130 tot 160 m²</button>
+<button type="button" class="rh-chip" data-gas="850" data-actief="0" aria-pressed="false">Hoekwoning</button>
+<button type="button" class="rh-chip" data-gas="1000" data-actief="0" aria-pressed="false">Grote woning vanaf 160 m²</button>
+</div>
+</div>
+<div class="rh-blok">
+<label class="rh-stap" for="rh-gas">2. Of stel je eigen gasverbruik in</label>
+<div class="rh-verbruik"><output id="rh-gas-uit" for="rh-gas rh-gas-getal">800</output><span>m³ gas per jaar</span></div>
+<input id="rh-gas" class="rh-schuif" type="range" min="300" max="2500" step="10" value="800">
+<div class="rh-schaal" aria-hidden="true"><span>300</span><span>2.500</span></div>
+<div class="rh-typ"><label for="rh-gas-getal">Liever typen? Het staat op je jaarafrekening.</label><input id="rh-gas-getal" type="number" inputmode="numeric" min="0" max="5000" step="10" value="800"></div>
+</div>
+<fieldset class="rh-blok rh-keuze">
+<legend class="rh-stap">3. Is je cv-ketel aan vervanging toe?</legend>
+<div class="rh-knoppen">
+<input type="radio" name="rh-ketel" id="rh-ketel-ja" value="ja" checked><label for="rh-ketel-ja">Ja, binnenkort</label>
+<input type="radio" name="rh-ketel" id="rh-ketel-nee" value="nee"><label for="rh-ketel-nee">Nee, nog niet</label>
+</div>
+</fieldset>
+<details class="rh-meer">
+<summary>Prijzen en subsidie aanpassen</summary>
+<fieldset class="rh-keuze">
+<legend>Energieprijzen</legend>
+<div class="rh-knoppen">
+<input type="radio" name="rh-prijzen" id="rh-p-lang" value="lang" checked><label for="rh-p-lang">Langjarig gemiddelde</label>
+<input type="radio" name="rh-prijzen" id="rh-p-nu" value="nu"><label for="rh-p-nu">November 2026</label>
+<input type="radio" name="rh-prijzen" id="rh-p-eigen" value="eigen"><label for="rh-p-eigen">Eigen tarieven</label>
+</div>
+<p class="rh-klein">Langjarig: gas € 1,37 per m³ en stroom € 0,21 per kWh. November 2026: € 1,80 en € 0,33.</p>
+<div id="rh-eigen" class="rh-eigen" hidden>
+<div><label for="rh-prijs-gas">Gasprijs per m³ (€)</label><input id="rh-prijs-gas" type="number" inputmode="decimal" min="0.1" max="10" step="0.01" value="1.37"></div>
+<div><label for="rh-prijs-stroom">Stroomprijs per kWh (€)</label><input id="rh-prijs-stroom" type="number" inputmode="decimal" min="0.01" max="5" step="0.01" value="0.21"></div>
+</div>
+</fieldset>
+<fieldset class="rh-keuze">
+<legend>Subsidie van het jaar</legend>
+<div class="rh-knoppen">
+<input type="radio" name="rh-jaar" id="rh-j-2026" value="2026" checked><label for="rh-j-2026">2026</label>
+<input type="radio" name="rh-jaar" id="rh-j-2027" value="2027"><label for="rh-j-2027">2027 (voorgenomen)</label>
+</div>
+</fieldset>
+</details>
+<p id="rh-fout" class="rh-fout" role="alert" hidden></p>
+</div>
+<div id="rh-uitkomst" class="rh-uitkomst">
+<p id="rh-oordeel" class="rh-oordeel" aria-live="polite"></p>
+<div class="rh-kaarten">
+<div class="rh-kaart">
+<h4><span class="rh-streep" style="background: #2a78d6"></span>Hybride warmtepomp</h4>
+<div class="rh-tvt"><span class="rh-tvt-label">Terugverdiend na</span><strong id="rh-hybride-tvt"></strong></div>
+<div class="rh-meter" aria-hidden="true"><span id="rh-hybride-balk" style="background: #2a78d6"></span><i></i></div>
+<p id="rh-hybride-oordeel" class="rh-klein"></p>
+<dl>
+<div><dt>Besparing</dt><dd id="rh-hybride-besparing"></dd></div>
+<div><dt>Kosten na subsidie</dt><dd id="rh-hybride-netto"></dd></div>
+</dl>
+<p id="rh-hybride-gas" class="rh-klein"></p>
+</div>
+<div class="rh-kaart">
+<h4><span class="rh-streep" style="background: #eb6834"></span>Volledig elektrisch</h4>
+<div class="rh-tvt"><span class="rh-tvt-label">Terugverdiend na</span><strong id="rh-elektrisch-tvt"></strong></div>
+<div class="rh-meter" aria-hidden="true"><span id="rh-elektrisch-balk" style="background: #eb6834"></span><i></i></div>
+<p id="rh-elektrisch-oordeel" class="rh-klein"></p>
+<dl>
+<div><dt>Besparing</dt><dd id="rh-elektrisch-besparing"></dd></div>
+<div><dt>Kosten na subsidie</dt><dd id="rh-elektrisch-netto"></dd></div>
+</dl>
+<p id="rh-elektrisch-gas" class="rh-klein"></p>
+</div>
+</div>
+<figure id="rh-figuur" class="rh-figuur">
+<figcaption><strong>Wanneer heb je het terugverdiend?</strong><span>Opgetelde besparing min de kosten na subsidie. Boven de nullijn heb je de warmtepomp terugverdiend.</span></figcaption>
+<div class="rh-legenda"><span><span class="rh-streep" style="background: #2a78d6"></span>Hybride warmtepomp</span><span><span class="rh-streep" style="background: #eb6834"></span>Volledig elektrisch</span></div>
+<div class="rh-plaat"><svg id="rh-grafiek" role="img" aria-label="Lijngrafiek van het saldo over 20 jaar"></svg><div id="rh-tip" class="rh-tip" hidden></div></div>
+<details class="rh-tabelknop">
+<summary>Bekijk de cijfers als tabel</summary>
+<div class="table-scroll"><table>
+<thead><tr><th scope="col">Moment</th><th scope="col" class="num">Hybride</th><th scope="col" class="num">Volledig elektrisch</th></tr></thead>
+<tbody id="rh-tabel"></tbody>
+</table></div>
+</details>
+</figure>
+</div>
+<p class="rh-klein rh-voet">Kengetallen, geen offerte. Volledig elektrisch is inclusief inductie en zonder vaste gaskosten. Is je ketel aan vervanging toe, dan tellen alleen de meerkosten ten opzichte van een nieuwe ketel. De meter onder de terugverdientijd loopt tot 20 jaar; het streepje staat op de levensduur van ongeveer 15 jaar. Je gegevens blijven in je eigen browser en worden nergens opgeslagen.</p>
+<noscript><p>De rekenhulp werkt alleen als JavaScript aan staat. Gebruik anders de tabel hierboven.</p></noscript>
+</form>
 <p>Zo is gerekend:</p>
 <ul>
 <li>Energieprijzen: € 1,37 per m³ gas en € 0,21 per kWh stroom, het langjarig gemiddelde 2026 tot 2040 van Milieu Centraal. In november 2026 liggen nieuwe contracten veel hoger, rond € 1,80 en € 0,33. Bij die prijzen bespaart een hybride ongeveer 17% meer; volledig elektrisch blijft gelijk.</li>
@@ -270,5 +364,6 @@
 <footer class="site-footer">
 <div class="wrap">Gemaakt door <a href="https://jidai.nl">JIDAI (jidai.nl)</a> met behulp van AI · <a href="../../">Alle buurten</a> · <a href="flyers.html">Flyers per woningtype</a></div>
 </footer>
+<script src="../../assets/rekenhulp.js?v=2"></script>
 </body>
 </html>
