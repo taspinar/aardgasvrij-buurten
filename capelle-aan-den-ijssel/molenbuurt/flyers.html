@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Molenbuurt aardgasvrij: flyers per woningtype</title>
+<meta name="description" content="Vijf flyers om te printen, één per woningtype in de Molenbuurt in Capelle aan den IJssel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@600;700&display=swap">
+<link rel="stylesheet" href="../../assets/style.css">
+<style>
+.flyer-intro { padding: 28px 0 8px; }
+.flyer-nav { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 0 0 1em; padding: 0; list-style: none; }
+.sheets { background: #eef1f5; padding: 24px 12px 48px; }
+.sheet { background: #ffffff; max-width: 794px; margin: 0 auto 28px; display: flex; flex-direction: column; border: 1px solid var(--line); }
+.sheet-head { background: var(--tint); padding: 40px 44px 26px; }
+.sheet-head .kicker { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--blue); margin-bottom: 8px; }
+.sheet-head h2 { border: 0; padding: 0; margin: 0 0 8px; font-size: clamp(2.2rem, 8vw, 4rem); line-height: 1.06; }
+.sheet-head p { margin: 0; font-size: 1.15rem; color: var(--blue); }
+.sheet-body { padding: 22px 44px 34px; display: flex; flex-direction: column; gap: 18px; flex-grow: 1; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin: 0; }
+.facts div { border-top: 3px solid var(--blue); padding-top: 8px; }
+.facts dt { font-size: 0.8rem; color: var(--muted); }
+.facts dd { margin: 0; font-weight: 600; }
+.where { font-size: 0.88rem; color: var(--muted); margin: 0; }
+.sheet h3 { margin: 0 0 8px; font-size: 1.4rem; }
+.steps { margin: 0; padding: 0; list-style: none; counter-reset: stap; }
+.steps li { counter-increment: stap; position: relative; padding-left: 44px; margin-bottom: 9px; min-height: 30px; }
+.steps li::before { content: counter(stap); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 15px; background: var(--blue); color: #ffffff; font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; }
+.sheet .stats { margin: 0; }
+.sheet .stats span { font-size: 0.86rem; line-height: 1.4; display: block; }
+.letop p { margin: 0 0 4px; font-size: 0.97rem; }
+.sheet-foot { margin-top: auto; border-top: 1px solid var(--blue); padding-top: 10px; }
+.sheet-foot p { margin: 0; }
+.sheet-foot .more { font-weight: 600; color: var(--blue); }
+.sheet-foot .small { font-size: 0.75rem; color: var(--muted); }
+@page { size: A4; margin: 0; }
+@media print {
+  .site-header, .flyer-intro, .site-footer { display: none; }
+  .sheets { background: none; padding: 0; }
+  .sheet { width: 210mm; height: 297mm; max-width: none; margin: 0; border: 0; break-after: page; overflow: hidden; }
+  .sheet-head, .steps li::before, .sheet .stats li { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .sheet-head h2 { font-size: 54pt; }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="../../">Aardgasvrij per buurt</a>
+<nav aria-label="Hoofdmenu"><a href="../../">Alle buurten</a><a href="./">Rapport Molenbuurt</a></nav>
+</div>
+</header>
+<div class="wrap flyer-intro">
+<h1>Flyers per woningtype</h1>
+<p>Vijf flyers voor de Molenbuurt, één per woningtype. Kies Afdrukken in je browser om ze als A4 te printen of als PDF op te slaan: elke flyer komt op een eigen pagina.</p>
+<ul class="flyer-nav">
+<li><a href="#type-1">1. Tussenwoning tot 130 m²</a></li>
+<li><a href="#type-2">2. Tussenwoning 130 tot 160 m²</a></li>
+<li><a href="#type-3">3. Hoekwoning</a></li>
+<li><a href="#type-4">4. Grote woning</a></li>
+<li><a href="#type-5">5. Appartement</a></li>
+</ul>
+</div>
+<main class="sheets">
+
+<section class="sheet" id="type-1">
+<div class="sheet-head">
+<div class="kicker">Molenbuurt aardgasvrij · woningtype 1</div>
+<h2>Tussenwoning tot 130 m²</h2>
+<p>Zo ga je stap voor stap van het aardgas af.</p>
+</div>
+<div class="sheet-body">
+<dl class="facts">
+<div><dt>In de buurt</dt><dd>120 woningen</dd></div>
+<div><dt>Bouwjaar en oppervlak</dt><dd>1986-1987 · circa 122 m²</dd></div>
+<div><dt>Gasverbruik (schatting)</dt><dd>circa 700 m³ per jaar</dd></div>
+</dl>
+<p class="where">Vooral aan de Korenmolen, Beltmolen, Zaagmolen en Windmolen.</p>
+<div>
+<h3>Jouw route</h3>
+<ol class="steps">
+<li><strong>Doe de 50-gradentest.</strong> Zet het cv-water op 50 graden. Blijft het warm?</li>
+<li><strong>Vervang oud dubbelglas</strong> door HR++-glas.</li>
+<li><strong>Kook elektrisch</strong> zodra de keuken of kookplaat wordt vervangen.</li>
+<li><strong>Ketel op?</strong> Kies een volledig elektrische warmtepomp.</li>
+<li><strong>Laat de gasaansluiting weghalen.</strong> Dat is gratis.</li>
+</ol>
+</div>
+<ul class="stats">
+<li><strong>10-12 jaar</strong><span>terugverdientijd volledig elektrisch, bij vervanging van de ketel</span></li>
+<li><strong>14-23 jaar</strong><span>terugverdientijd hybride warmtepomp</span></li>
+<li><strong>€ 360</strong><span>per jaar minder vaste kosten zonder gasaansluiting</span></li>
+</ul>
+<div class="letop">
+<h3>Let op</h3>
+<p>Je gasverbruik is al laag. Een hybride warmtepomp verdient zich hier nauwelijks terug.</p>
+<p>De tuin is klein. Stem de plek en het geluid van de buitenunit af met de buren.</p>
+</div>
+<div class="sheet-foot">
+<p class="more">Meer weten? Lees het buurtrapport of vraag het aan [NAAM EN CONTACT BEWONERSINITIATIEF].</p>
+<p class="small">Kengetallen van Milieu Centraal en CBS, geen offerte. Reken altijd met je eigen gasverbruik. Stand: november 2026. Gemaakt door jidai.nl met behulp van AI.</p>
+</div>
+</div>
+</section>
+
+<section class="sheet" id="type-2">
+<div class="sheet-head">
+<div class="kicker">Molenbuurt aardgasvrij · woningtype 2</div>
+<h2>Tussenwoning 130 tot 160 m²</h2>
+<p>Zo ga je stap voor stap van het aardgas af.</p>
+</div>
+<div class="sheet-body">
+<dl class="facts">
+<div><dt>In de buurt</dt><dd>148 woningen</dd></div>
+<div><dt>Bouwjaar en oppervlak</dt><dd>1986-1990 · circa 143 m²</dd></div>
+<div><dt>Gasverbruik (schatting)</dt><dd>circa 800 m³ per jaar</dd></div>
+</dl>
+<p class="where">Het meest voorkomende type, vooral aan de Standaardmolen, Papiermolen en Beltmolen.</p>
+<div>
+<h3>Jouw route</h3>
+<ol class="steps">
+<li><strong>Doe de 50-gradentest.</strong> Zet het cv-water op 50 graden. Blijft het warm?</li>
+<li><strong>Vervang oud dubbelglas</strong> door HR++-glas. Laat dak en vloer beoordelen.</li>
+<li><strong>Kook elektrisch</strong> zodra de keuken of kookplaat wordt vervangen.</li>
+<li><strong>Ketel op?</strong> Kies een volledig elektrische warmtepomp.</li>
+<li><strong>Laat de gasaansluiting weghalen.</strong> Dat is gratis.</li>
+</ol>
+</div>
+<ul class="stats">
+<li><strong>circa 10 jaar</strong><span>terugverdientijd volledig elektrisch, bij vervanging van de ketel</span></li>
+<li><strong>circa 14 jaar</strong><span>terugverdientijd hybride warmtepomp</span></li>
+<li><strong>€ 360</strong><span>per jaar minder vaste kosten zonder gasaansluiting</span></li>
+</ul>
+<div class="letop">
+<h3>Let op</h3>
+<p>Een hybride warmtepomp wordt pas interessant boven ongeveer 1.000 m³ gas per jaar.</p>
+<p>Volledig elektrisch vraagt plek voor een boilervat, meestal op zolder.</p>
+</div>
+<div class="sheet-foot">
+<p class="more">Meer weten? Lees het buurtrapport of vraag het aan [NAAM EN CONTACT BEWONERSINITIATIEF].</p>
+<p class="small">Kengetallen van Milieu Centraal en CBS, geen offerte. Reken altijd met je eigen gasverbruik. Stand: november 2026. Gemaakt door jidai.nl met behulp van AI.</p>
+</div>
+</div>
+</section>
+
+<section class="sheet" id="type-3">
+<div class="sheet-head">
+<div class="kicker">Molenbuurt aardgasvrij · woningtype 3</div>
+<h2>Hoekwoning</h2>
+<p>En twee-onder-een-kap, tot 160 m². Zo ga je stap voor stap van het aardgas af.</p>
+</div>
+<div class="sheet-body">
+<dl class="facts">
+<div><dt>In de buurt</dt><dd>49 woningen</dd></div>
+<div><dt>Bouwjaar en oppervlak</dt><dd>1986-1990 · circa 137 m²</dd></div>
+<div><dt>Gasverbruik (schatting)</dt><dd>800 m³ per jaar of meer</dd></div>
+</dl>
+<p class="where">In alle straten van de buurt. Door de extra buitengevel verbruik je meer dan de buren in het midden van de rij.</p>
+<div>
+<h3>Jouw route</h3>
+<ol class="steps">
+<li><strong>Doe de 50-gradentest.</strong> Zet het cv-water op 50 graden. Blijft het warm?</li>
+<li><strong>Begin bij glas en zijgevel.</strong> Die tellen bij een hoekwoning extra mee.</li>
+<li><strong>Kook elektrisch</strong> zodra de keuken of kookplaat wordt vervangen.</li>
+<li><strong>Ketel op?</strong> Volledig elektrisch als de test slaagt, anders hybride.</li>
+<li><strong>Laat de gasaansluiting weghalen</strong> zodra je geen gas meer gebruikt.</li>
+</ol>
+</div>
+<ul class="stats">
+<li><strong>9-10 jaar</strong><span>terugverdientijd volledig elektrisch, bij vervanging van de ketel</span></li>
+<li><strong>10-14 jaar</strong><span>terugverdientijd hybride warmtepomp</span></li>
+<li><strong>€ 360</strong><span>per jaar minder vaste kosten zonder gasaansluiting</span></li>
+</ul>
+<div class="letop">
+<h3>Let op</h3>
+<p>Hoe hoger je gasverbruik, hoe sneller een warmtepomp zich terugverdient.</p>
+<p>De zijgevel of zijtuin is vaak een goede plek voor de buitenunit.</p>
+</div>
+<div class="sheet-foot">
+<p class="more">Meer weten? Lees het buurtrapport of vraag het aan [NAAM EN CONTACT BEWONERSINITIATIEF].</p>
+<p class="small">Kengetallen van Milieu Centraal en CBS, geen offerte. Reken altijd met je eigen gasverbruik. Stand: november 2026. Gemaakt door jidai.nl met behulp van AI.</p>
+</div>
+</div>
+</section>
+
+<section class="sheet" id="type-4">
+<div class="sheet-head">
+<div class="kicker">Molenbuurt aardgasvrij · woningtype 4</div>
+<h2>Grote woning vanaf 160 m²</h2>
+<p>Zo ga je stap voor stap van het aardgas af.</p>
+</div>
+<div class="sheet-body">
+<dl class="facts">
+<div><dt>In de buurt</dt><dd>58 woningen</dd></div>
+<div><dt>Bouwjaar en oppervlak</dt><dd>1986-1990 · circa 182 m²</dd></div>
+<div><dt>Gasverbruik (schatting)</dt><dd>circa 1.000 m³ per jaar</dd></div>
+</dl>
+<p class="where">Onder meer Beltmolen 93 tot 115, Papiermolen en Stellingmolen. Tussen- en hoekwoningen.</p>
+<div>
+<h3>Jouw route</h3>
+<ol class="steps">
+<li><strong>Doe de 50-gradentest.</strong> Zet het cv-water op 50 graden. Blijft het warm?</li>
+<li><strong>Isoleer eerst:</strong> HR++-glas, daarna dak en vloer laten beoordelen.</li>
+<li><strong>Kook elektrisch</strong> zodra de keuken of kookplaat wordt vervangen.</li>
+<li><strong>Een hybride warmtepomp kan nu al.</strong> Ketel op? Overweeg volledig elektrisch.</li>
+<li><strong>Laat de gasaansluiting weghalen</strong> zodra je geen gas meer gebruikt.</li>
+</ol>
+</div>
+<ul class="stats">
+<li><strong>7-10 jaar</strong><span>terugverdientijd hybride warmtepomp</span></li>
+<li><strong>7-9 jaar</strong><span>terugverdientijd volledig elektrisch, bij vervanging van de ketel</span></li>
+<li><strong>€ 2.125</strong><span>subsidie in 2026 voor een hybride warmtepomp van 4 kW</span></li>
+</ul>
+<div class="letop">
+<h3>Let op</h3>
+<p>Een grote woning vraagt een zwaardere warmtepomp dan het kengetal van 8 kW. Dat kost meer.</p>
+<p>Laat het benodigde vermogen berekenen voordat je offertes vergelijkt.</p>
+</div>
+<div class="sheet-foot">
+<p class="more">Meer weten? Lees het buurtrapport of vraag het aan [NAAM EN CONTACT BEWONERSINITIATIEF].</p>
+<p class="small">Kengetallen van Milieu Centraal en CBS, geen offerte. Reken altijd met je eigen gasverbruik. Stand: november 2026. Gemaakt door jidai.nl met behulp van AI.</p>
+</div>
+</div>
+</section>
+
+<section class="sheet" id="type-5">
+<div class="sheet-head">
+<div class="kicker">Molenbuurt aardgasvrij · woningtype 5</div>
+<h2>Appartement</h2>
+<p>Van het aardgas af doe je samen, via de VvE.</p>
+</div>
+<div class="sheet-body">
+<dl class="facts">
+<div><dt>In de buurt</dt><dd>87 appartementen</dd></div>
+<div><dt>Bouwjaar en oppervlak</dt><dd>1988-1990 · circa 104 m²</dd></div>
+<div><dt>Gasverbruik (schatting)</dt><dd>circa 600 m³ per jaar</dd></div>
+</dl>
+<p class="where">Vijf complexen aan de Poortmolen, Papiermolen, Paltrokmolen en Standaardmolen.</p>
+<div>
+<h3>Jullie route</h3>
+<ol class="steps">
+<li><strong>Zet verduurzaming op de agenda</strong> van de ledenvergadering.</li>
+<li><strong>Zoek uit hoe het gebouw verwarmt:</strong> eigen ketels of blokverwarming?</li>
+<li><strong>Vraag de gratis VvE-ondersteuning</strong> van de gemeente aan.</li>
+<li><strong>Neem glas en isolatie op</strong> in het meerjarenonderhoudsplan.</li>
+<li><strong>Kies samen de warmtepomp:</strong> gezamenlijk of per woning.</li>
+</ol>
+</div>
+<ul class="stats">
+<li><strong>5 complexen</strong><span>aan vier straten in de buurt</span></li>
+<li><strong>29%</strong><span>van de appartementen met een geregistreerd label heeft al A of B</span></li>
+<li><strong>Nu al</strong><span>kun je zelf overstappen op elektrisch koken</span></li>
+</ul>
+<div class="letop">
+<h3>Let op</h3>
+<p>Gevel, dak, glas en een buitenunit zijn een besluit van de VvE, niet van één eigenaar.</p>
+<p>Een terugverdientijd is hier niet berekend. Die hangt af van het gebouw.</p>
+</div>
+<div class="sheet-foot">
+<p class="more">Meer weten? Lees het buurtrapport of vraag het aan [NAAM EN CONTACT BEWONERSINITIATIEF].</p>
+<p class="small">Cijfers van CBS, Kadaster en RVO, geen persoonlijk advies. Stand: november 2026. Gemaakt door jidai.nl met behulp van AI.</p>
+</div>
+</div>
+</section>
+
+</main>
+<footer class="site-footer">
+<div class="wrap">Gemaakt door <a href="https://jidai.nl">JIDAI (jidai.nl)</a> met behulp van AI · <a href="./">Rapport Molenbuurt</a></div>
+</footer>
+</body>
+</html>

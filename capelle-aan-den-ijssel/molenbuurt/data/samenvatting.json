@@ -1,0 +1,43 @@
+{
+  "buurt": "Molenbuurt",
+  "gemeente": "Capelle aan den IJssel",
+  "cbs_buurtcode": "BU05020661",
+  "peildatum_rapport": "2026-11-22",
+  "bronnen": {
+    "cbs": "Kerncijfers wijken en buurten 2025 (86165NED)",
+    "adressen": "AlleCijfers.nl: BAG (Kadaster) en energielabels (RVO), peildatum 2026-07-01, postcodes 2906 RA t/m SH"
+  },
+  "cbs": {
+    "inwoners": 1045,
+    "huishoudens": 460,
+    "woningvoorraad": 460,
+    "inwoners_65_plus": 370,
+    "koopwoningen_pct": 96,
+    "gemiddelde_woz_x1000": 479,
+    "aardgaswoningen_pct": 92,
+    "gemiddeld_gasverbruik_m3": 770,
+    "woningen_met_zonnestroom_pct": 53,
+    "gemiddelde_stroomlevering_kwh": 2810,
+    "gemiddelde_teruglevering_kwh": 1280,
+    "hoofdzakelijk_elektrisch_verwarmd_pct": 8
+  },
+  "adressen": {
+    "totaal": 478,
+    "woningen": 462,
+    "niet_woningen": 16,
+    "type": {"tussenwoning": 305, "hoekwoning": 68, "twee_onder_een_kap": 2, "appartement": 87},
+    "bouwjaar": {"1986": 101, "1987": 171, "1988": 48, "1989": 76, "1990": 66},
+    "labels": {
+      "geregistreerd": 251,
+      "voorlopig": 211,
+      "verdeling_geregistreerd": {"A+++": 1, "A+": 4, "A": 53, "B": 45, "C": 141, "D": 7}
+    }
+  },
+  "woningtypes": [
+    {"nr": 1, "naam": "Tussenwoning tot 130 m2", "aantal": 120, "mediaan_m2": 122, "gas_schatting_m3": 689, "geregistreerd_label": 61, "waarvan_a_of_b": 28},
+    {"nr": 2, "naam": "Tussenwoning 130 tot 160 m2", "aantal": 148, "mediaan_m2": 143, "gas_schatting_m3": 807, "geregistreerd_label": 70, "waarvan_a_of_b": 32},
+    {"nr": 3, "naam": "Hoekwoning en twee-onder-een-kap tot 160 m2", "aantal": 49, "mediaan_m2": 137, "gas_schatting_m3": 773, "geregistreerd_label": 23, "waarvan_a_of_b": 8},
+    {"nr": 4, "naam": "Grote woning vanaf 160 m2", "aantal": 58, "mediaan_m2": 181.5, "gas_schatting_m3": 1025, "geregistreerd_label": 34, "waarvan_a_of_b": 17},
+    {"nr": 5, "naam": "Appartement", "aantal": 87, "mediaan_m2": 104, "gas_schatting_m3": 587, "geregistreerd_label": 63, "waarvan_a_of_b": 18}
+  ]
+}
